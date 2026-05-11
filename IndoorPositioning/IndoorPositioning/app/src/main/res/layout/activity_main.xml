@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0D1117"
+    android:padding="20dp">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Indoor Positioning"
+        android:textColor="#58A6FF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Iribe Center — Floor 5"
+        android:textColor="#8B949E"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:fontFamily="monospace"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Landmark label -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LANDMARK LABEL"
+        android:textColor="#58A6FF"
+        android:textSize="10sp"
+        android:letterSpacing="0.1"
+        android:layout_marginBottom="6dp"/>
+
+    <EditText
+        android:id="@+id/etLandmark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#161B22"
+        android:textColor="#E6EDF3"
+        android:textColorHint="#484F58"
+        android:hint="e.g. corridor_near_5207 or junction_AB"
+        android:inputType="text"
+        android:padding="14dp"
+        android:textSize="13sp"
+        android:fontFamily="monospace"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Scan buttons -->
+    <Button
+        android:id="@+id/btnScan"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="📡  Scan Once"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:backgroundTint="#58A6FF"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/btnContinuous"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="▶  Start Continuous (3s)"
+        android:textColor="#E6EDF3"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:backgroundTint="#21262D"
+        android:layout_marginBottom="28dp"/>
+
+    <!-- Stats -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LIVE STATS"
+        android:textColor="#58A6FF"
+        android:textSize="10sp"
+        android:letterSpacing="0.1"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tvCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rows sent: 0  |  Scans: 0"
+        android:textColor="#3FB950"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:layout_marginBottom="6dp"/>
+
+    <TextView
+        android:id="@+id/tvRttCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RTT capable: —"
+        android:textColor="#E6EDF3"
+        android:textSize="13sp"
+        android:fontFamily="monospace"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Status -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#161B22"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ready — enter a landmark and tap Scan."
+            android:textColor="#8B949E"
+            android:textSize="12sp"
+            android:fontFamily="monospace"
+            android:lineSpacingMultiplier="1.4"/>
+    </ScrollView>
+
+</LinearLayout>
